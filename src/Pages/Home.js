@@ -1,15 +1,16 @@
 import React from 'react';
+import './PagesCSS/Home.css';
 
 function Home() {
     return (
         <>
         <div>
-            <h1>
+            <h1 className="Welkom">
                 Welkom bij Yang Yang Sushi Eindhoven
             </h1>
-            <p>Bestel hier uw sushi</p>
         </div>
-        <div>
+        <div className="quick-order">
+            <p>Bestel hier uw sushi</p>
             <form>
                 <h3>
                     Voer hier uw postcode in

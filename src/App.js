@@ -7,6 +7,7 @@ import { BrowserRouter as Router,
 import './App.css';
 import Home from './Pages/Home';
 import Logo from './Assets/Yang Yang Sushi Logo.png';
+import Menu from './Pages/Menu';
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
                 </div>
                 <ul>
                   <li><Link to="/">Home</Link></li>
+                  <li><Link to="/menu">Menu</Link></li>
                 </ul>
-                <li><Link to="/menu">Menu</Link></li>
               </nav>
               <Switch>
                 <Route exact path="/">

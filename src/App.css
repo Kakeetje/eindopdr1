@@ -1,3 +1,7 @@
+body{
+    background-color: white;
+
+}
 header{
     min-height: 70px;
     display: flex;
@@ -26,7 +30,7 @@ nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    padding: 0 300px;
+    padding: 0 15px;
 }
 
 nav ul li a:hover{

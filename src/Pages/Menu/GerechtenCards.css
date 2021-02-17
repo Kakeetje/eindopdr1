@@ -1,0 +1,31 @@
+.card {
+    background-color: Black;
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #e9c46a;
+}
+
+.stats {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.stat {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sprite {
+    height: 96px;
+    width: 96px;
+}
