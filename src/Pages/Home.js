@@ -2,6 +2,7 @@ import React from 'react';
 import './PagesCSS/Home.css';
 
 function Home() {
+
     return (
         <>
         <div>

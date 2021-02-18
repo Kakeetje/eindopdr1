@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import GerechtenCards from "./Menu/GerechtenCards";
 import Chopsticks from "../Assets/Chopsticks-for-Loading.gif";
+import './PagesCSS/Menu.css';
+import MenuIcon from '../Assets/bars-solid.svg';
+import CrossIcon from '../Assets/times-solid.svg';
 
 export default function Menu() {
     const [gerechten, setGerechten] = useState(null);
@@ -30,6 +33,7 @@ export default function Menu() {
         <>
         <div className="Menu">
             <h1>Bekijk onze Menu</h1>
+            <img src={MenuIcon} alt="" width="20" />
         </div>
     <div className="next-previous">
         <button

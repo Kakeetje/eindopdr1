@@ -1,14 +1,8 @@
-body{
-    background-color: white;
-
-}
-header{
-    min-height: 70px;
+.header-home{
+    background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
-    background: black;
+    padding: 0 15px;
 }
 
 header .YangYang a{

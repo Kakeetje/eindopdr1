@@ -8,13 +8,18 @@ import './App.css';
 import Home from './Pages/Home';
 import Logo from './Assets/Yang Yang Sushi Logo.png';
 import Menu from './Pages/Menu';
+import CartIcon from './Assets/shopping-cart-solid.svg';
+
+
 
 function App() {
+
   return (
       <header>
         <>
           <Router>
             <div>
+              <div className="header-home">
               <nav>
                 <div className="Nav-Balk">
                   <Link to="/">
@@ -26,6 +31,8 @@ function App() {
                   <li><Link to="/menu">Menu</Link></li>
                 </ul>
               </nav>
+              </div>
+
               <Switch>
                 <Route exact path="/">
                   <Home />
