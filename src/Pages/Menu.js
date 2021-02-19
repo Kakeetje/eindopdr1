@@ -6,8 +6,10 @@ import Chopsticks from "../Assets/Chopsticks-for-Loading.gif";
 import './PagesCSS/Menu.css';
 import MenuIcon from '../Assets/bars-solid.svg';
 import CrossIcon from '../Assets/times-solid.svg';
+import ShoppingCart from '../Pages/Components/ShoppingCart';
 
-export default function Menu() {
+
+export default function Menu({ProductApi}) {
     const [gerechten, setGerechten] = useState(null);
     const [pagina, setPagina] = useState(0);
     const [status, setStatus] = useState("loading");
@@ -52,6 +54,7 @@ export default function Menu() {
                 {gerechten?.map((gerecht) => {
                     return <GerechtenCards key={gerecht.name} name={gerecht.name} />
           })}
+          <ShoppingCart/>
       </div>
             <div>
                 <nav>

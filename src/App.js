@@ -9,8 +9,7 @@ import Home from './Pages/Home';
 import Logo from './Assets/Yang Yang Sushi Logo.png';
 import Menu from './Pages/Menu';
 import CartIcon from './Assets/shopping-cart-solid.svg';
-
-
+import ShoppingCart from "./Pages/Components/ShoppingCart";
 
 function App() {
 
@@ -46,6 +45,7 @@ function App() {
                 <Route path="/menu">
                   <Menu />
                 </Route>
+                <Route path="/products" component={ShoppingCart}/>
               </Switch>
             </div>
           </Router>
