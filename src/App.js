@@ -30,6 +30,12 @@ function App() {
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/menu">Menu</Link></li>
                 </ul>
+                <div className="Nav-Cart">
+                  <span>0</span>
+                    <Link to="/cart">
+                      <img src={CartIcon} alt="" width="20" />
+                    </Link>
+                </div>
               </nav>
               </div>
 

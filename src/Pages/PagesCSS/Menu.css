@@ -1,5 +1,8 @@
-.Menu {
-    text-align: center;
+.Menu{
+    padding: 20px;
+}
+.MenuIcon {
+   padding: 20px;
 }
 .next-previous {
     padding-top: 5vh;
@@ -15,5 +18,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+header .Menu,
+header .close{
+    display: block;
+}
+
+header .close{
+    position: absolute;
 }
 

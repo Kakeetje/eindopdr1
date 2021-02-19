@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import GerechtenCards from "./Menu/GerechtenCards";
 import Chopsticks from "../Assets/Chopsticks-for-Loading.gif";
@@ -33,7 +34,7 @@ export default function Menu() {
         <>
         <div className="Menu">
             <h1>Bekijk onze Menu</h1>
-            <img src={MenuIcon} alt="" width="20" />
+            <img className="MenuIcon" src={MenuIcon} alt="" width="20" />
         </div>
     <div className="next-previous">
         <button
@@ -52,6 +53,20 @@ export default function Menu() {
                     return <GerechtenCards key={gerecht.name} name={gerecht.name} />
           })}
       </div>
+            <div>
+                <nav>
+             <ul className="Sushi-category">
+                 <li><Link to="/menu/nigiri">Nigiri</Link></li>
+                 <li><Link to="/menu/hosomaki">Hosomaki</Link></li>
+                 <li><Link to="/menu/urumaki">Urumaki</Link></li>
+                 <li><Link to="/menu/crispyrolls">Crispy Rolls</Link></li>
+                 <li><Link to="/menu/bijgerechten">Bijgerechten</Link></li>
+                 <li className="Close">
+                     <img src={CrossIcon}  alt="" width="20"/>
+                 </li>
+            </ul>
+                </nav>
+            </div>
      </>
      );
     }
