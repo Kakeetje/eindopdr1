@@ -6,10 +6,10 @@ import Chopsticks from "../Assets/Chopsticks-for-Loading.gif";
 import './PagesCSS/Menu.css';
 import MenuIcon from '../Assets/bars-solid.svg';
 import CrossIcon from '../Assets/times-solid.svg';
-import ShoppingCart from '../Pages/Components/ShoppingCart';
+import ShoppingCart from "./Components/ShoppingCart";
 
 
-export default function Menu({ProductApi}) {
+export default function Menu() {
     const [gerechten, setGerechten] = useState(null);
     const [pagina, setPagina] = useState(0);
     const [status, setStatus] = useState("loading");

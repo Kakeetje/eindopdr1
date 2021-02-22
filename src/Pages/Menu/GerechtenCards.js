@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GerechtenCards.css';
-import Products from '../../Products';
 import ShoppingCart from "../Components/ShoppingCart";
 
 export default function GerechtenCards(props) {

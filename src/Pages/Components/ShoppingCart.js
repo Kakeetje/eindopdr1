@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductsApi from "../../Products";
+import ProductsApi from './Products';
 
 export default function ShoppingCart() {
     const [cart, setCart] = useState(ProductsApi);
@@ -89,7 +89,7 @@ export default function ShoppingCart() {
                 <b>
                     <p>Items in Cart: {cartCountTotal}</p>
                     <p>
-                        Total Price: $
+                        Total Price:
                         {Number.isInteger(cartPriceTotal)
                             ? cartPriceTotal
                             : cartPriceTotal.toFixed(2)}
@@ -124,8 +124,8 @@ export default function ShoppingCart() {
         <div className="flexParent">
             {cart.map((item, i) => (
                 <div key={item.name}>
-                    <p>{item.name}</p>
-                    <p>Price: ${item.price}</p>
+                    <p>Nigiri</p>
+                    <p>Price: €20,-</p>
                     {!item.inCart ? (
                         <>
                             <button onClick={() => decreaseQuantity(i)}>-</button>
@@ -145,7 +145,7 @@ export default function ShoppingCart() {
     );
 
     return (
-        <div>
+        <div className="Checkout">
             {cartItems}
             {cartTotals()}
             {cartProducts()}
