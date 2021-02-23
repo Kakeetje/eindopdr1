@@ -1,4 +1,4 @@
-.Checkout{
+.AddtoCart{
     position: fixed;
     top: 0;
     right: -100%;
@@ -15,4 +15,8 @@
 
 .ShoppingCart.speed-in {
     right: 0;
+}
+
+.ShoppingCart{
+    float: right;
 }

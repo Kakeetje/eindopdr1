@@ -8,7 +8,6 @@ import MenuIcon from '../Assets/bars-solid.svg';
 import CrossIcon from '../Assets/times-solid.svg';
 import ShoppingCart from "./Components/ShoppingCart";
 
-
 export default function Menu() {
     const [gerechten, setGerechten] = useState(null);
     const [pagina, setPagina] = useState(0);

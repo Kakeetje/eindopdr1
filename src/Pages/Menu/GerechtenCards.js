@@ -15,7 +15,7 @@ export default function GerechtenCards(props) {
 
     },[props.name]);
 
-    console.log(gerecht?.types);
+
     return (
         <div className="card">
             <h1>{gerecht?.name}</h1>
@@ -24,6 +24,9 @@ export default function GerechtenCards(props) {
                 alt={gerecht?.name}
                 src={gerecht?.sprites.front_default}
             />
+            <p>Nigiri</p>
+            <p>Zalm 1 stuk</p>
+            <p> €2,-</p>
             <ShoppingCart/>
         </div>
     );
